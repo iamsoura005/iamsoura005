@@ -98,12 +98,12 @@
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamsoura005&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=iamsoura005&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=iamsoura005&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=iamsoura005&theme=radical&hide_border=true" alt="GitHub Streak" height="165"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=iamsoura005&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" height="165"/>
+  <img src="https://streak-stats.demolab.com/?user=iamsoura005&theme=radical&hide_border=true" alt="GitHub Streak" height="165"/>
 </div>
 
 ---
@@ -111,7 +111,7 @@
 ## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=iamsoura005&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="GitHub Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=iamsoura005&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=2&column=4&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" alt="GitHub Trophies"/>
 </div>
 
 ---
@@ -122,11 +122,11 @@
 
 <div align="center">
 
-[![Dristi AI](https://github-readme-stats.vercel.app/api/pin/?username=iamsoura005&repo=Dristi_Ai&theme=radical)](https://github.com/iamsoura005/Dristi_Ai)
-[![Keystroke Auth](https://github-readme-stats.vercel.app/api/pin/?username=iamsoura005&repo=User-Authentication-Using-Keystroke-Dynamics&theme=radical)](https://github.com/iamsoura005/User-Authentication-Using-Keystroke-Dynamics)
+[![Dristi AI](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=iamsoura005&repo=Dristi_Ai&theme=radical)](https://github.com/iamsoura005/Dristi_Ai)
+[![Keystroke Auth](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=iamsoura005&repo=User-Authentication-Using-Keystroke-Dynamics&theme=radical)](https://github.com/iamsoura005/User-Authentication-Using-Keystroke-Dynamics)
 
-[![Voice Fraud Detection](https://github-readme-stats.vercel.app/api/pin/?username=iamsoura005&repo=Fraude-detection-using-voice&theme=radical)](https://github.com/iamsoura005/Fraude-detection-using-voice)
-[![Fake News Detection](https://github-readme-stats.vercel.app/api/pin/?username=iamsoura005&repo=Fake-news-detection&theme=radical)](https://github.com/iamsoura005/Fake-news-detection)
+[![Voice Fraud Detection](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=iamsoura005&repo=Fraude-detection-using-voice&theme=radical)](https://github.com/iamsoura005/Fraude-detection-using-voice)
+[![Fake News Detection](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=iamsoura005&repo=Fake-news-detection&theme=radical)](https://github.com/iamsoura005/Fake-news-detection)
 
 </div>
 
@@ -134,8 +134,8 @@
 
 <div align="center">
 
-[![Crime Detection](https://github-readme-stats.vercel.app/api/pin/?username=iamsoura005&repo=Crime-Detection-&theme=radical)](https://github.com/iamsoura005/Crime-Detection-)
-[![Skills Swap](https://github-readme-stats.vercel.app/api/pin/?username=iamsoura005&repo=Skills_swap_oddo&theme=radical)](https://github.com/iamsoura005/Skills_swap_oddo)
+[![Crime Detection](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=iamsoura005&repo=Crime-Detection-&theme=radical)](https://github.com/iamsoura005/Crime-Detection-)
+[![Skills Swap](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=iamsoura005&repo=Skills_swap_oddo&theme=radical)](https://github.com/iamsoura005/Skills_swap_oddo)
 
 </div>
 
@@ -144,7 +144,7 @@
 ## 📈 Contribution Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamsoura005&theme=react-dark&hide_border=true" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamsoura005&theme=react-dark&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution Graph"/>
 </div>
 
 ---
