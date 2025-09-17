@@ -26,7 +26,7 @@
 • 👯 I'm looking to collaborate on **Python-based ML/AI Projects**
 • 🤔 I'm looking for help with **Scaling ML Models in Production**
 • 💬 Ask me about **Python, AI/ML, Full Stack Development, Data Science**
-• 📫 How to reach me: **souradutta@example.com**
+• 📫 How to reach me: **sourasantadutta@gmail.com**
 • 📍 Location: **India** 🇮🇳
 • 💻 **Total Commits:** 100+ and counting!
 • 🔥 **Fun fact:** I've built AI systems that can detect 8 different eye diseases and authenticate users based on their typing patterns!
