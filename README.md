@@ -1,4 +1,14 @@
 # ⚡ Welcome to my Tech Portfolio - I'm Sourasanta Dutta
+---
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&width=100%"/>
+</div>
+---
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake.svg">
+</picture>
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=440&lines=AI+%26+ML+Enthusiast;Full+Stack+Developer;Problem+Solver;Open+Source+Contributor" alt="Typing SVG" />
@@ -17,15 +27,7 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&width=100%"/>
 </div>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake.svg">
-</picture>
-
 ---
-
 ## � About Me
 
 > "I enjoy bringing ideas to life through code. I'm curious, detail-oriented, and always learning new things."
