@@ -1,4 +1,10 @@
 # ⚡ Welcome to my Tech Portfolio - I'm Sourasanta Dutta
+---
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake.svg">
+</picture>
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=440&lines=AI+%26+ML+Enthusiast;Full+Stack+Developer;Problem+Solver;Open+Source+Contributor" alt="Typing SVG" />
@@ -14,7 +20,10 @@
 </div>
 
 ---
-
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&width=100%"/>
+</div>
+---
 ## � About Me
 
 > "I enjoy bringing ideas to life through code. I'm curious, detail-oriented, and always learning new things."
@@ -26,7 +35,7 @@
 • 👯 I'm looking to collaborate on **Python-based ML/AI Projects**
 • 🤔 I'm looking for help with **Scaling ML Models in Production**
 • 💬 Ask me about **Python, AI/ML, Full Stack Development, Data Science**
-• 📫 How to reach me: **souradutta@example.com**
+• 📫 How to reach me: **sourasantadutta@gmail.com**
 • 📍 Location: **India** 🇮🇳
 • 💻 **Total Commits:** 100+ and counting!
 • 🔥 **Fun fact:** I've built AI systems that can detect 8 different eye diseases and authenticate users based on their typing patterns!
