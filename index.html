@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourasanta Dutta - AI/ML Developer & Full Stack Engineer</title>
+    <meta name="description" content="AI/ML Developer and Full Stack Engineer passionate about building intelligent solutions. Specialized in Python, Machine Learning, Deep Learning, and modern web technologies.">
+    <meta name="keywords" content="AI, ML, Machine Learning, Full Stack Developer, Python, React, Next.js, TensorFlow, PyTorch, Sourasanta Dutta">
+    <meta name="author" content="Sourasanta Dutta">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sourasanta-portfolio.vercel.app/">
+    <meta property="og:title" content="Sourasanta Dutta - AI/ML Developer & Full Stack Engineer">
+    <meta property="og:description" content="AI/ML Developer and Full Stack Engineer passionate about building intelligent solutions.">
+    <meta property="og:image" content="https://sourasanta-portfolio.vercel.app/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sourasanta-portfolio.vercel.app/">
+    <meta property="twitter:title" content="Sourasanta Dutta - AI/ML Developer & Full Stack Engineer">
+    <meta property="twitter:description" content="AI/ML Developer and Full Stack Engineer passionate about building intelligent solutions.">
+    <meta property="twitter:image" content="https://sourasanta-portfolio.vercel.app/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+    <meta name="theme-color" content="#8b5cf6">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: white;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #8b5cf6;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero h2 {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+        
+        .typing-text {
+            font-family: 'Fira Code', monospace;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: #60a5fa;
+            margin-bottom: 2rem;
+            min-height: 2rem;
+        }
+        
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .bio {
+            font-size: 1.2rem;
+            color: #d1d5db;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        
+        .fun-fact {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+            position: relative;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Tech Stack */
+        .tech-category {
+            margin-bottom: 3rem;
+        }
+        
+        .tech-category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+        }
+        
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #8b5cf6;
+        }
+        
+        .project-description {
+            color: #d1d5db;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .project-tech {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .tech-tag {
+            background: rgba(139, 92, 246, 0.2);
+            color: #c4b5fd;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .project-link {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .project-link:hover {
+            color: #3b82f6;
+        }
+        
+        /* GitHub Stats */
+        .github-stats {
+            text-align: center;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .stats-container img {
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .social-link img {
+            transition: transform 0.3s ease;
+        }
+        
+        .social-link:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Footer */
+        footer {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                padding: 4rem 0;
+            }
+            
+            .badges {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">Sourasanta Dutta</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>⚡ Welcome to my Tech Portfolio</h1>
+                <h2>I'm Sourasanta Dutta</h2>
+                <div class="typing-text" id="typingText">AI & ML Enthusiast</div>
+                
+                <div class="badges">
+                    <img src="https://komarev.com/ghpvc/?username=iamsoura005&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile views">
+                    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fiamsoura005%2Fiamsoura005&label=VISITORS&labelColor=%23000&countColor=%230A0209" alt="Visitors">
+                </div>
+                
+                <p class="bio">"I enjoy bringing ideas to life through code. I'm curious, detail-oriented, and always learning new things."</p>
+                
+                <div class="fun-fact">
+                    <p style="color: #fbbf24; font-weight: 600; margin-bottom: 0.5rem;">🔥 Fun fact:</p>
+                    <p>I've built AI systems that can detect 8 different eye diseases and authenticate users based on their typing patterns!</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" style="color: #60a5fa;">100+</div>
+                        <div class="stat-label">Commits</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color: #34d399;">15+</div>
+                        <div class="stat-label">Repositories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color: #a78bfa;">AI/ML</div>
+                        <div class="stat-label">Focus</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color: #fbbf24;">India 🇮🇳</div>
+                        <div class="stat-label">Location</div>
+                    </div>
+                </div>
+                
+                <a href="#projects" style="display: inline-block; background: linear-gradient(135deg, #8b5cf6, #3b82f6); color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; margin-top: 2rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    🚀 Explore My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">🚀 About Me</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.8; color: #d1d5db;">
+                <p style="margin-bottom: 2rem;">
+                    • 🐍 <strong>Primary Language:</strong> Python (My go-to for everything!)<br>
+                    • 🤖 <strong>Specialization:</strong> AI/ML & Full Stack Development<br>
+                    • 🔭 I'm currently working on <strong>Advanced Machine Learning & AI Projects</strong><br>
+                    • 🌱 I'm currently learning <strong>Large Language Models & Generative AI</strong><br>
+                    • 👯 I'm looking to collaborate on <strong>Python-based ML/AI Projects</strong><br>
+                    • 💬 Ask me about <strong>Python, AI/ML, Full Stack Development, Data Science</strong><br>
+                    • 📫 How to reach me: <strong>souradutta@example.com</strong><br>
+                    • 📍 Location: <strong>India</strong> 🇮🇳
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">🛠️ Technologies & Tools</h2>
+            
+            <div class="tech-category">
+                <h3>🐍 Core Languages</h3>
+                <div class="tech-badges">
+                    <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" alt="Python">
+                    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                    <img src="https://img.shields.io/badge/SQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+                </div>
+            </div>
+            
+            <div class="tech-category">
+                <h3>🤖 Machine Learning & AI</h3>
+                <div class="tech-badges">
+                    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+                    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+                    <img src="https://img.shields.io/badge/-Scikit%20Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit Learn">
+                    <img src="https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white" alt="OpenCV">
+                    <img src="https://img.shields.io/badge/-Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+                    <img src="https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+                </div>
+            </div>
+            
+            <div class="tech-category">
+                <h3>🌐 Web Development</h3>
+                <div class="tech-badges">
+                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+                    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+                    <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+                    <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+                    <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+                    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS">
+                </div>
+            </div>
+            
+            <div class="tech-category">
+                <h3>☁️ Databases & Cloud</h3>
+                <div class="tech-badges">
+                    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+                    <img src="https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
+                    <img src="https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+                    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+                    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="stats">
+        <div class="container">
+            <h2 class="section-title">📊 GitHub Analytics</h2>
+            <div class="github-stats">
+                <div class="stats-container">
+                    <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=iamsoura005&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages">
+                </div>
+                
+                <div class="stats-container">
+                    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=iamsoura005&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" height="165">
+                    <img src="https://streak-stats.demolab.com/?user=iamsoura005&theme=radical&hide_border=true" alt="GitHub Streak" height="165">
+                </div>
+                
+                <div class="stats-container">
+                    <img src="https://github-profile-trophy.vercel.app/?username=iamsoura005&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=2&column=4&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" alt="GitHub Trophies">
+                </div>
+                
+                <div class="stats-container">
+                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamsoura005&theme=react-dark&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution Graph">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">🔥 Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">🩺 Dristi AI - Eye Disease Detection</h3>
+                    <p class="project-description">AI-powered detection of 8 different eye diseases with color blindness testing using deep learning and computer vision.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/iamsoura005/Dristi_Ai" class="project-link" target="_blank">GitHub</a>
+                        <a href="https://dristi-ai.vercel.app" class="project-link" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">🔒 Keystroke Authentication System</h3>
+                    <p class="project-description">Sophisticated biometric authentication using typing patterns with 5 different ML models for enhanced security.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Biometrics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/iamsoura005/User-Authentication-Using-Keystroke-Dynamics" class="project-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">🤝 Skills Swap Platform</h3>
+                    <p class="project-description">Modern TypeScript web application with glass morphism UI for peer-to-peer skill exchange and learning.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">TailwindCSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/iamsoura005/Skills_swap_oddo" class="project-link" target="_blank">GitHub</a>
+                        <a href="https://skills-swap-oddo.vercel.app" class="project-link" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">🎵 Voice Fraud Detection</h3>
+                    <p class="project-description">Advanced audio processing and ML system for detecting fraudulent voice patterns and authentication.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Audio Processing</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/iamsoura005/Fraude-detection-using-voice" class="project-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">🔍 Fake News Detection</h3>
+                    <p class="project-description">Natural Language Processing solution using machine learning for real-time fake news identification.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Text Processing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/iamsoura005/Fake-news-detection" class="project-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">📊 Crime Hotspot Mapping</h3>
+                    <p class="project-description">Predictive analytics system for crime forecasting and geographical mapping using machine learning.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/iamsoura005/Crime-Detection-" class="project-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">🌐 Connect with Me</h2>
+            <div class="contact">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #d1d5db;">Let's build something amazing together! 🚀</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sourasanta-dutta-852345282" class="social-link" target="_blank">
+                        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/iamsoura005" class="social-link" target="_blank">
+                        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                    </a>
+                    <a href="mailto:souradutta@example.com" class="social-link">
+                        <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+                    </a>
+                </div>
+                
+                <div style="margin-top: 3rem; padding: 2rem; background: rgba(139, 92, 246, 0.1); border-radius: 16px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <h3 style="color: #fbbf24; margin-bottom: 1rem;">💻 "Code never sleeps, and neither do great ideas! 💡"</h3>
+                    <p style="font-style: italic; color: #d1d5db;">"The best way to predict the future is to code it." - Anonymous Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sourasanta Dutta. All rights reserved.</p>
+            <p style="margin-top: 1rem; color: #9ca3af;">Built with ❤️ and lots of ☕</p>
+        </div>
+    </footer>
+
+    <!-- Snake Animation -->
+    <div style="text-align: center; margin: 2rem 0;">
+        <img src="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake-dark.svg" alt="GitHub Snake Animation" style="max-width: 100%; border-radius: 12px;">
+    </div>
+
+    <script>
+        // Typing Animation
+        const texts = [
+            'AI & ML Enthusiast',
+            'Full Stack Developer', 
+            'Problem Solver',
+            'Open Source Contributor'
+        ];
+        
+        let currentTextIndex = 0;
+        let currentCharIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typingText');
+        
+        function typeText() {
+            const currentText = texts[currentTextIndex];
+            
+            if (!isDeleting) {
+                typingElement.textContent = currentText.substring(0, currentCharIndex + 1) + '|';
+                currentCharIndex++;
+                
+                if (currentCharIndex === currentText.length) {
+                    setTimeout(() => isDeleting = true, 2000);
+                }
+            } else {
+                typingElement.textContent = currentText.substring(0, currentCharIndex - 1) + '|';
+                currentCharIndex--;
+                
+                if (currentCharIndex === 0) {
+                    isDeleting = false;
+                    currentTextIndex = (currentTextIndex + 1) % texts.length;
+                }
+            }
+            
+            setTimeout(typeText, isDeleting ? 50 : 100);
+        }
+        
+        // Start typing animation
+        typeText();
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
