@@ -1,9 +1,5 @@
 # ⚡ Welcome to my Tech Portfolio - I'm Sourasanta Dutta
 ---
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&width=100%"/>
-</div>
----
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iamsoura005/iamsoura005/output/github-contribution-grid-snake.svg">
