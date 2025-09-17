@@ -15,7 +15,7 @@
 
 ---
 
-## � About Me
+## 🚀 About Me
 
 > "I enjoy bringing ideas to life through code. I'm curious, detail-oriented, and always learning new things."
 
