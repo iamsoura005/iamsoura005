@@ -1,7 +1,7 @@
 # <div align="center">⚡ Hey! I'm Soura ⚡</div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=80&lines=🤖+AI+%26+ML+Enthusi## 📈 Featured Projects & Development Timelinest;🚀+Full+Stack+Developer;🔥+Problem+Solver;⭐+Open+Source+Contributor;💡+Innovation+Creator" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=80&lines=🤖+AI+%26+ML+Enthusiastic## 📈 Featured Projects & Development Timelinest;🚀+Full+Stack+Developer;🔥+Problem+Solver;⭐+Open+Source+Contributor;💡+Innovation+Creator" alt="Typing SVG" />
 </div>
 
 <div align="center">
